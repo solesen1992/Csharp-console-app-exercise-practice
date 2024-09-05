@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpCode", "HelpCode\HelpCode.csproj", "{3F4D8C5C-2577-49FC-9F67-047DEF7F2C1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallDomainModel", "SmallDomainModel\SmallDomainModel.csproj", "{1F51C12C-4CF5-4095-A6E4-6F0D10CEB054}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmallDomainModel", "SmallDomainModel\SmallDomainModel.csproj", "{1F51C12C-4CF5-4095-A6E4-6F0D10CEB054}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleApps", "ConsoleApps", "{55CF91AC-9CF6-4A10-9DDD-F05234608686}"
 EndProject
@@ -19,11 +19,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PropertiesDemo", "Propertie
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TryParseDemo", "TryParseDemo", "{6B197283-457C-43DD-9E60-A1785C78405A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Full", "Full\Full.csproj", "{6DA811B1-7188-4AF5-B59F-D34BB2FA775B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Full", "Full\Full.csproj", "{6DA811B1-7188-4AF5-B59F-D34BB2FA775B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoImplemented", "AutoImplemented\AutoImplemented.csproj", "{BD955F4D-4C72-4C0B-B8AD-089C9F2695F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoImplemented", "AutoImplemented\AutoImplemented.csproj", "{BD955F4D-4C72-4C0B-B8AD-089C9F2695F0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainModelToCsharp", "DomainModelToCsharp", "{4ADFD539-C26C-4D75-B7C8-1B7185B1E35D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise", "Exercise", "{7C8FF79F-B773-47CB-8FCB-2C5E0FB6CAF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise", "Exercise\Exercise.csproj", "{DECAFD22-44ED-4738-B522-11327AC3846D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ObjectInitialization", "ObjectInitialization", "{C669C487-46AC-4595-BCD6-02B650571656}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectInitialization", "UseOfConstructor\ObjectInitialization.csproj", "{C9935394-4343-428D-A7DE-BFF9793B740A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +63,14 @@ Global
 		{BD955F4D-4C72-4C0B-B8AD-089C9F2695F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD955F4D-4C72-4C0B-B8AD-089C9F2695F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD955F4D-4C72-4C0B-B8AD-089C9F2695F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DECAFD22-44ED-4738-B522-11327AC3846D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DECAFD22-44ED-4738-B522-11327AC3846D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DECAFD22-44ED-4738-B522-11327AC3846D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DECAFD22-44ED-4738-B522-11327AC3846D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9935394-4343-428D-A7DE-BFF9793B740A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9935394-4343-428D-A7DE-BFF9793B740A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9935394-4343-428D-A7DE-BFF9793B740A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9935394-4343-428D-A7DE-BFF9793B740A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +82,8 @@ Global
 		{1F51C12C-4CF5-4095-A6E4-6F0D10CEB054} = {4ADFD539-C26C-4D75-B7C8-1B7185B1E35D}
 		{6DA811B1-7188-4AF5-B59F-D34BB2FA775B} = {2AD2A760-870B-489B-8F10-F2E59E7E8F4A}
 		{BD955F4D-4C72-4C0B-B8AD-089C9F2695F0} = {2AD2A760-870B-489B-8F10-F2E59E7E8F4A}
+		{DECAFD22-44ED-4738-B522-11327AC3846D} = {7C8FF79F-B773-47CB-8FCB-2C5E0FB6CAF9}
+		{C9935394-4343-428D-A7DE-BFF9793B740A} = {C669C487-46AC-4595-BCD6-02B650571656}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {648BE6D2-74D1-4517-94AE-FF30B3A66797}
