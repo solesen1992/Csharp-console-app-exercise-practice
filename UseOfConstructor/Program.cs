@@ -43,3 +43,11 @@ Employee employee2 = new Employee("P E Dahl", new DateTime(1982, 02, 28), 30000,
 Console.WriteLine(employee.ToString());
 Console.WriteLine(" ");
 Console.WriteLine(employee2.ToString());
+
+
+// Create a company using both the company number and name
+Company company1 = new Company(12345, "Tech Innovators");
+
+// Print the company information
+Console.WriteLine(" ");
+Console.WriteLine(company1.ToString());
