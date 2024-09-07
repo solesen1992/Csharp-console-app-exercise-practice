@@ -19,9 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo_Properties", "Demo_Pro
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo_TryParse", "Demo_TryParse", "{6B197283-457C-43DD-9E60-A1785C78405A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Full", "Full\Full.csproj", "{6DA811B1-7188-4AF5-B59F-D34BB2FA775B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo_Full", "Full\Demo_Full.csproj", "{6DA811B1-7188-4AF5-B59F-D34BB2FA775B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoImplemented", "AutoImplemented\AutoImplemented.csproj", "{BD955F4D-4C72-4C0B-B8AD-089C9F2695F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo_AutoImplemented", "AutoImplemented\Demo_AutoImplemented.csproj", "{BD955F4D-4C72-4C0B-B8AD-089C9F2695F0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise_DomainModelToCsharp", "Exercise_DomainModelToCsharp", "{4ADFD539-C26C-4D75-B7C8-1B7185B1E35D}"
 EndProject
