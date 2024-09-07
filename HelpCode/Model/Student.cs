@@ -1,5 +1,5 @@
 ﻿
-namespace HelpCode.Model
+namespace Demo_HelpCode.Model
 {
     // public instead of internal so it can be used in other projects
     public class Student

@@ -1,6 +1,6 @@
-﻿using HelpCode.Model;
+﻿using Demo_HelpCode.Model;
 
-namespace HelpCode.Data
+namespace Demo_HelpCode.Data
 {
     public class StudentAccess
     {
