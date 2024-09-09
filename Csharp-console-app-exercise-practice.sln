@@ -37,11 +37,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise_JavaToCsharp", "Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise_JavaToCsharp", "Exercise_JavaToCsharp\Exercise_JavaToCsharp.csproj", "{0EE00C5F-C79D-4A11-AF69-1D9C3933F8D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_JavaToCsharp2", "Exercise_JavaToCsharp2\Exercise_JavaToCsharp2.csproj", "{0197A99E-990C-4DA8-9C36-ECE757361655}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise_JavaToCsharp2", "Exercise_JavaToCsharp2\Exercise_JavaToCsharp2.csproj", "{0197A99E-990C-4DA8-9C36-ECE757361655}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_JavaToCsharp3", "Exercise_JavaToCsharp3\Exercise_JavaToCsharp3.csproj", "{BE5C4186-D0B1-40C0-B564-2B39F474795A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise_JavaToCsharp3", "Exercise_JavaToCsharp3\Exercise_JavaToCsharp3.csproj", "{BE5C4186-D0B1-40C0-B564-2B39F474795A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_JavaToCsharp3_Model", "Exercise_JavaToCsharp3_Model\Exercise_JavaToCsharp3_Model.csproj", "{7AC45D0C-FE78-4DC6-A679-41D8C098D9F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise_JavaToCsharp3_Model", "Exercise_JavaToCsharp3_Model\Exercise_JavaToCsharp3_Model.csproj", "{7AC45D0C-FE78-4DC6-A679-41D8C098D9F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_TryParse", "Demo_TryParse\Demo_TryParse.csproj", "{3DB7BED1-20BD-4F01-B245-5949CBC5912E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_TryEnum", "Demo_TryEnum\Demo_TryEnum.csproj", "{48967DAB-8EBB-4D7D-BEA5-6CDF970BB632}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +101,14 @@ Global
 		{7AC45D0C-FE78-4DC6-A679-41D8C098D9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AC45D0C-FE78-4DC6-A679-41D8C098D9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AC45D0C-FE78-4DC6-A679-41D8C098D9F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB7BED1-20BD-4F01-B245-5949CBC5912E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB7BED1-20BD-4F01-B245-5949CBC5912E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB7BED1-20BD-4F01-B245-5949CBC5912E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB7BED1-20BD-4F01-B245-5949CBC5912E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48967DAB-8EBB-4D7D-BEA5-6CDF970BB632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48967DAB-8EBB-4D7D-BEA5-6CDF970BB632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48967DAB-8EBB-4D7D-BEA5-6CDF970BB632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48967DAB-8EBB-4D7D-BEA5-6CDF970BB632}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,6 +126,8 @@ Global
 		{0197A99E-990C-4DA8-9C36-ECE757361655} = {70A0E04A-3B4C-4B76-BB71-4CCB3479E714}
 		{BE5C4186-D0B1-40C0-B564-2B39F474795A} = {70A0E04A-3B4C-4B76-BB71-4CCB3479E714}
 		{7AC45D0C-FE78-4DC6-A679-41D8C098D9F7} = {70A0E04A-3B4C-4B76-BB71-4CCB3479E714}
+		{3DB7BED1-20BD-4F01-B245-5949CBC5912E} = {6B197283-457C-43DD-9E60-A1785C78405A}
+		{48967DAB-8EBB-4D7D-BEA5-6CDF970BB632} = {6B197283-457C-43DD-9E60-A1785C78405A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {648BE6D2-74D1-4517-94AE-FF30B3A66797}
