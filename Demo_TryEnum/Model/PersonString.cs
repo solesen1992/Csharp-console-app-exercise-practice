@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Demo_TryEnum.Model
 {
+    /*
+     * This class, PersonString, represents a simple model for a person, where both the person's job title and first name are stored as strings.
+     */
     class PersonString
     {
         public string JobTitle { get; set; }
