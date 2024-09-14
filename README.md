@@ -1,6 +1,8 @@
 # C# console app exercise practice
 Small exercises in C# from my education in Computer Science. All the exercises are made as console apps.
 
+The projects starting with "Demo" are 'code along' sessions.
+The projects starting with "Exercise" are exercises from programming classes where I have to figure out how to solve them myself.
 
 # Documentation
 ## ConsoleApp1, ConsoleApp2 and HelpCode
