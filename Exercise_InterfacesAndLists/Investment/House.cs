@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace Exercise_InterfacesAndLists.Investment
 {
+    /**
+     * The House class implements the IInvestment interface and represents a house as an investment item.
+     * It includes attributes such as the house's address, square meters, price per square meter, condition, 
+     * and description. The class ensures that square meter values are valid (greater than 0) through property 
+     * validation and calculates the house's total price with overflow protection. It also provides a summary 
+     * of the house's investment details, including its price and condition.
+     */
     public class House : IInvestment
     {
+        // Enum to define different conditions a house can be in.
         public enum HouseCondition
         { 
             Unknown,
@@ -18,7 +26,7 @@ namespace Exercise_InterfacesAndLists.Investment
             Perfect
         }
 
-        // Constructor
+        // Constructor to initialize a house with its address, square meters, price per square meter, condition, and description.
         public House(string inAddress, int inSquareMeters, int inSquareMeterPrice, HouseCondition inCondition, string inDescription)
         {
             Address = inAddress;
@@ -33,18 +41,23 @@ namespace Exercise_InterfacesAndLists.Investment
 
         /* Properties */
         public string Address { get; set; }
+        // Property for SquareMeters with validation to ensure it's greater than 0.
         public int SquareMeters 
         {
+            // Gets the square meters.
             get => _squareMeters;
             set
             {
+                // Ensures the value is greater than 0.
                 if (value > 0)
                 {
+                    // Sets the value if it's valid.
                     _squareMeters = value;
                 }
                 else
                 {
-                    _squareMeters = 0;  // Or you could throw an exception or set a default value
+                    // Sets square meters to 0 if the value is invalid (could throw an exception instead).
+                    _squareMeters = 0;
                 }
             }
         }
@@ -53,6 +66,7 @@ namespace Exercise_InterfacesAndLists.Investment
         public string Description { get; set; }
 
         /* Methods */
+        // Method to calculate the total price of the house, with protection against overflow.
         public int PriceCalculate()
         {
             try
@@ -63,6 +77,7 @@ namespace Exercise_InterfacesAndLists.Investment
                 // Then, check if totalPrice fits within the bounds of int
                 if (totalPrice > int.MaxValue || totalPrice < int.MinValue)
                 {
+                    // Throw exception if the totalPrice overflows.
                     throw new OverflowException();
                 }
 
@@ -71,17 +86,23 @@ namespace Exercise_InterfacesAndLists.Investment
             }
             catch (OverflowException)
             {
+                // Handle overflow by printing an error message.
                 Console.WriteLine("Overflow occurred during price calculation.");
                 return -1; // Return error value (or handle as needed)
             }
         }
 
+        // Method to provide a summary of the house investment.
         public string InvestSummary()
         {
+            // Calculate the price of the house.
             int price = PriceCalculate();
+            // Check if overflow occurred and set appropriate price text.
             string priceText = price == -1 ? "Overflow!" : price.ToString();
+            // Create a summary string that includes the address, square meters, price, and condition.
             string summ = "House: " + Address + Environment.NewLine + "Area = " + SquareMeters;
             summ += Environment.NewLine + "Price: " + PriceCalculate() + Environment.NewLine + "Condition: " + Condition;
+            // Return the summary.
             return summ;
         }
     }
