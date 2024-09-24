@@ -93,9 +93,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise_DelegatesAndSort",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise_LINQ", "Exercise_LINQ", "{F2B9FD3E-D109-4C24-B37F-89D9082F5AFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_LINQ", "Exercise_LINQ\Exercise_LINQ.csproj", "{36C84143-3241-44C7-AE67-B6F15AA0A18A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise_LINQ", "Exercise_LINQ\Exercise_LINQ.csproj", "{36C84143-3241-44C7-AE67-B6F15AA0A18A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_DelegatesAndSort_SortDelegate_Base", "Exercise_DelegatesAndSort_SortDelegate_Base\Exercise_DelegatesAndSort_SortDelegate_Base.csproj", "{2BA6A3B2-4FC6-46F3-99F3-EFCC60863254}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise_DelegatesAndSort_SortDelegate_Base", "Exercise_DelegatesAndSort_SortDelegate_Base\Exercise_DelegatesAndSort_SortDelegate_Base.csproj", "{2BA6A3B2-4FC6-46F3-99F3-EFCC60863254}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise_DealingWithErrors", "Exercise_DealingWithErrors", "{52922E73-31CC-4E9F-A879-0277E6A5A777}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_DebugAndTest_WeatherConsole", "Exercise_DebugAndTest_WeatherConsole\Exercise_DebugAndTest_WeatherConsole.csproj", "{A2618E5E-6FF4-4A7C-8642-31866B139C92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_DebugAndTest_Meteorology_Tests", "Exercise_DebugAndTest_Meteorology_Tests\Exercise_DebugAndTest_Meteorology_Tests.csproj", "{404072B6-2F82-45A1-A343-06115D0BF9FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_DebugAndTest_Meteorology", "Exercise_DebugAndTest_Meteorology\Exercise_DebugAndTest_Meteorology.csproj", "{1692AE24-1FC3-41DA-AE66-70C1137DB53B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -223,6 +231,18 @@ Global
 		{2BA6A3B2-4FC6-46F3-99F3-EFCC60863254}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BA6A3B2-4FC6-46F3-99F3-EFCC60863254}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BA6A3B2-4FC6-46F3-99F3-EFCC60863254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2618E5E-6FF4-4A7C-8642-31866B139C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2618E5E-6FF4-4A7C-8642-31866B139C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2618E5E-6FF4-4A7C-8642-31866B139C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2618E5E-6FF4-4A7C-8642-31866B139C92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{404072B6-2F82-45A1-A343-06115D0BF9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{404072B6-2F82-45A1-A343-06115D0BF9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{404072B6-2F82-45A1-A343-06115D0BF9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{404072B6-2F82-45A1-A343-06115D0BF9FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1692AE24-1FC3-41DA-AE66-70C1137DB53B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1692AE24-1FC3-41DA-AE66-70C1137DB53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1692AE24-1FC3-41DA-AE66-70C1137DB53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1692AE24-1FC3-41DA-AE66-70C1137DB53B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -258,6 +278,9 @@ Global
 		{BAECF319-A6D2-45DF-9197-6393FB7A7949} = {8C8E7006-6CE3-4369-9FF0-DA861C87C605}
 		{36C84143-3241-44C7-AE67-B6F15AA0A18A} = {F2B9FD3E-D109-4C24-B37F-89D9082F5AFF}
 		{2BA6A3B2-4FC6-46F3-99F3-EFCC60863254} = {4107A73E-14F4-4B64-B176-3C25D2C4283E}
+		{A2618E5E-6FF4-4A7C-8642-31866B139C92} = {52922E73-31CC-4E9F-A879-0277E6A5A777}
+		{404072B6-2F82-45A1-A343-06115D0BF9FD} = {52922E73-31CC-4E9F-A879-0277E6A5A777}
+		{1692AE24-1FC3-41DA-AE66-70C1137DB53B} = {52922E73-31CC-4E9F-A879-0277E6A5A777}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {648BE6D2-74D1-4517-94AE-FF30B3A66797}
