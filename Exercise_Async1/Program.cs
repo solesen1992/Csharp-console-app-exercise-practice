@@ -1,5 +1,9 @@
 ﻿using System.Diagnostics;
 
+/*
+ * Different ways to get a lot of plusses and minusses in the console.
+ */
+
 const int repetitions = 1000;
 
 // UseSystemThreading();
