@@ -23,7 +23,7 @@ namespace Exercise_FidoFitnessClub.Model
             Name = name;
         }
 
-        public Boolean isFeeDue(int year) {
+        public Boolean IsFeeDue(int year) {
             return year > FeeYear;
             /*
              * boolean result = false;
@@ -34,7 +34,7 @@ namespace Exercise_FidoFitnessClub.Model
              */
         }
 
-        public int dueYearsCount(int year) {
+        public int DueYearsCount(int year) {
             return year - FeeYear;
             /*
              * int result = year - feeYear;
