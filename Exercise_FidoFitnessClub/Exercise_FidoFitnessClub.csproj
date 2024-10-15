@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="Controller\" />
-    <Folder Include="GUI\" />
     <Folder Include="TUI\" />
   </ItemGroup>
 
