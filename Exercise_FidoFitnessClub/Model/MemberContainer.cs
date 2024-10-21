@@ -58,8 +58,9 @@ namespace Exercise_FidoFitnessClub.Model
             {
                 members.Add(member);
             }
-            else { 
-                throw new ArgumentException("Email in use: " + member.Email);
+            else
+            {
+                throw new ArgumentException("A member with the same email already exists.");
             }
         }
 
@@ -70,14 +71,26 @@ namespace Exercise_FidoFitnessClub.Model
          */
         public Member FindByEmail(string email)
         {
-            Member result = null;
+            return members.FirstOrDefault(m => m.Email.Equals(email, StringComparison.OrdinalIgnoreCase));
+
+            /*foreach (var member in members)
+            {
+                if (member.Email.Equals(email, StringComparison.OrdinalIgnoreCase))
+                {
+                    return member;
+                }
+            }
+
+            return null; // If no match is found, return null*/
+
+            /*Member result = null;
             for (int i = 0; i < members.Count && result == null; i++) {
                 if (members[i].Email.Equals(email, StringComparison.OrdinalIgnoreCase))
                 {
                     result = members[i];
                 }
             }
-            return result;
+            return result;*/
         }
 
         /*
@@ -86,7 +99,16 @@ namespace Exercise_FidoFitnessClub.Model
          */
         public List<Member> FindAll()
         {
-            return new List<Member>(this.members);
+            return new List<Member>(members);
+        }
+
+        /*
+         * The Count property returns the total number of members in the container.
+         * This can be useful for displaying statistics or managing membership limits.
+         */
+        public int Count
+        {
+            get { return members.Count; }
         }
     }
 }

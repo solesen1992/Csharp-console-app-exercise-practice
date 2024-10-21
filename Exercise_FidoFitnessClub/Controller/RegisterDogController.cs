@@ -49,7 +49,15 @@ namespace Exercise_FidoFitnessClub.Controller
         {
             MemberController memberController = new MemberController();
             _currentMember = memberController.FindByEmail(email);
+            if (_currentMember == null)
+            {
+                throw new ArgumentException("Member not found.");
+            }
             return _currentMember;
+
+            /*MemberController memberController = new MemberController();
+            _currentMember = memberController.FindByEmail(email);
+            return _currentMember;*/
         }
 
         /*
@@ -64,9 +72,18 @@ namespace Exercise_FidoFitnessClub.Controller
          */
         public Dog RegisterDog(String dogName, int feeYear)
         {
-            Dog dog = new Dog(dogName, feeYear);
+            if (_currentMember == null)
+            {
+                throw new InvalidOperationException("No member is set. Find a member first.");
+            }
+
+            Dog newDog = new Dog(dogName, feeYear);
+            _currentMember.Dogs.Add(newDog);
+            return newDog;
+
+            /*Dog dog = new Dog(dogName, feeYear);
             _currentMember.AddDog(dog);
-            return dog;
+            return dog;*/
         }
 
         /*
@@ -82,8 +99,24 @@ namespace Exercise_FidoFitnessClub.Controller
         public void UpdateDog(String oldName, String newName, int year)
         {
             Dog dog = _currentMember.FindDogByName(oldName);
+
+            // Check if the dog was found
+            if (dog == null)
+            {
+                Console.WriteLine($"Dog with name '{oldName}' not found.");
+                return; // Or throw an exception, depending on your error handling strategy
+            }
+
+            // Update the dog's information
             dog.Name = newName;
             dog.FeeYear = year;
+
+            Console.WriteLine($"Dog updated: {dog}");
+            Console.WriteLine($"Dog updated: Name='{dog.Name}', FeeYear={dog.FeeYear}");
+
+            /*Dog dog = _currentMember.FindDogByName(oldName);
+            dog.Name = newName;
+            dog.FeeYear = year;*/
         }
     }
 }
